@@ -3,20 +3,29 @@ namespace NodeJS {
     /**
      * If configured use your custom domain.
      *
+     * @example `mydomain.com` or `mydomain.us.auth0.com`
      * @readonly
      */
     readonly AUTH0_DOMAIN: string;
     /**
      * If using a custom domain, this is a required variable.
      *
+     * @example `mytenant.us.auth0.com`
      * @readonly
      */
     readonly AUTH0_MANAGEMENT_DOMAIN?: string;
+    /**
+     * Your Auth0 application's Client ID.
+     *
+     * @example `I9f3bhfrp276gU5SEsU6itjkBvDKtQCa`
+     * @readonly
+     */
     readonly AUTH0_CLIENT_ID: string;
     /**
      * Set if a different CLIENT_ID should be used for management API calls.
      *
      * @default `AUTH0_CLIENT_ID`
+     * @example `I9f3bhfrp276gU5SEsU6itjkBvDKtQCa`
      * @readonly
      */
     readonly AUTH0_MANAGEMENT_CLIENT_ID?: string;
@@ -38,6 +47,13 @@ namespace NodeJS {
      * @readonly
      */
     readonly AUTH0_SECRET: string;
+    /**
+     * If set, this connection will be used by default when creating organizations (if none is provided).
+     *
+     * @example `con_xxxxxxxxx`
+     * @readonly
+     */
+    readonly AUTH0_ORGANIZATIONS_ENABLED_CONNECTION?: string;
     /**
      * Your application's base URL.
      *
