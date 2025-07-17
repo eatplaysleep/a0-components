@@ -49,7 +49,7 @@ function getAvatarFallback(user?: User | null) {
 
 export default function UserButton({
   children,
-  logoutUrl = "/api/auth/logout",
+  logoutUrl = "/auth/logout",
 }: {
   children?: React.ReactNode;
   logoutUrl?: string;
